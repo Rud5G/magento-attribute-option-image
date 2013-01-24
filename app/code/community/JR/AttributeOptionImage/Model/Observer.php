@@ -26,12 +26,9 @@ class JR_AttributeOptionImage_Model_Observer
              ->addItem('js_css', 'prototype/windows/themes/default.css');
 
         // Less than 1.7
-        if (version_compare(Mage::getVersion(), '1.7.0.0', '<'))
-        {
+        if (version_compare(Mage::getVersion(), '1.7.0.0', '<')) {
             $head->addItem('js_css', 'prototype/windows/themes/magento.css');
-        }
-        else
-        {
+        } else {
             $head->addCss('lib/prototype/windows/themes/magento.css');
         }
     }
